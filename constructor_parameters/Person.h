@@ -14,6 +14,10 @@ private:
 public:
     Person();
 
+    explicit Person(std::string newName);
+
+    Person(std::string newName, int newAge);
+
     std::string toString();
 };
 

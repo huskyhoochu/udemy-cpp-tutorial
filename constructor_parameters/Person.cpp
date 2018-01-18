@@ -12,5 +12,20 @@ Person::Person() {
 
 std::string Person::toString() {
     std::stringstream ss;
-    ss <<
+    ss << "Name: ";
+    ss << name;
+    ss << "; age: ";
+    ss << age;
+    return ss.str();
+}
+
+Person::Person(std::string newName) {
+    name = newName;
+    age = 0;
+
+}
+
+Person::Person(std::string newName, int newAge) {
+    name = newName;
+    age = newAge;
 }
